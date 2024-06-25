@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --primary-bg: #4a5560;
+    --primary-text-color: hotpink;
+    --accent-color: white;
+}
+
+
+body {
+    background-color: var(--primary-bg);
+}
+
+header,
+footer {
+    height: 15vh;
+    background-color: var(--primary-bg);
+    text-align: center;
+}
+
+header p {
+    color: var(--accent-color);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--primary-text-color);
+}
+
+main {
+    min-height: 70vh;
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    border: 2px dashed var(--accent-color);
+    width: 30%;
+    padding: 10px;
+    position: relative;
+    background-color: var(--primary-bg);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease;
+}
+
+.card:hover,
+.card:hover h3 {
+    box-shadow: 0 0 10px 5px var(--primary-text-color), 0 0 10px 5px var(--primary-text-color) inset;
+}
+
+.card h3 {
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
+    font-size: 150%;
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg);
+    padding: 5px;
+    position: relative;
+    bottom: 30px;
+    transition: all 0.5s ease;
+}
+
+.card p {
+    color: var(--primary-text-color);
+}
+
+pre {
+    font-family: monospace;
+    background: linear-gradient(#610561, var(--primary-text-color));
+    color: var(--accent-color);
+    padding: 20px;
+    border-radius: 10px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    user-select: all;
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .card {
+        width: 90%;
+    }
+    
+}
