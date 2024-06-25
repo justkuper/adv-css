@@ -6,7 +6,7 @@
 }
 
 :root {
-    --primary-bg: #4a5560;
+    --primary-bg: #141313;
     --primary-text-color: hotpink;
     --accent-color: white;
 }
@@ -44,7 +44,7 @@ main {
 .card {
     border: 2px dashed var(--accent-color);
     width: 30%;
-    padding: 10px;
+    padding: 20px;
     position: relative;
     background-color: var(--primary-bg);
     margin-top: 10px;
